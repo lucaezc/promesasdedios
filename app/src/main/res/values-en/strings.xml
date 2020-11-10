@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Promesas</string>
+    <string name="advertenciaCompartir">You must receive the promise before you share it.</string>
+    <string name="advertenciaCopiar">You must receive the promise before copying it.</string>
+    <string name="compartirTooltip">Share the promise</string>
+    <string name="copiarTooltip">Copy the promise to the clipboard</string>
+    <string name="descargarTooltip">Download image</string>
+    <string name="guardadoImagen">Saved image.</string>
+    <string name="mensajeCopiarPortapapeles">Promise copied to clipboard.</string>
+    <string name="preguntaCompartir">Share promise?</string>
+    <string name="recibirPromesa">Receive promise</string>
+    <string name="tema">By topic</string>
+    <string name="tituloPromesas">Promises of God</string>
+    <string name="versionTitulo">Version</string>
+    <string name="volver">Return</string>
+    <string name="promesaImagenPath">Promise_</string>
+    <string name="tituloCompartir">Share image using</string>
+</resources>

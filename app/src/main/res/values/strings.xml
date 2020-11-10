@@ -1,0 +1,87 @@
+<resources>
+    <integer name="cantPromesas">339</integer>
+    <integer name="cantPromesasTema">830</integer>
+
+    <string name="app_name">Promesas</string>
+    <string name="tituloPromesas">Promesas de Dios</string>
+    <string name="linkPromesas" translatable="false">goo.gl/pS3qRd</string>
+    <string name="mensajeCopiarPortapapeles">Promesa copiada al portapapeles.</string>
+    <string name="preguntaCompartir">¿Compartir promesa?</string>
+    <string name="tituloCompartir">Compartir imagen usando</string>
+    <string name="guardadoImagen">Imagen guardada.</string>
+    <string name="advertenciaCompartir">Debe recibir la promesa antes de compartirla.</string>
+    <string name="advertenciaCopiar">Debe recibir la promesa antes de copiarla.</string>
+    <string name="recibirPromesa">Recibir promesa</string>
+    <string name="volver">Volver</string>
+    <string name="versionTitulo">Versión</string>
+    <string name="tema">Por tema</string>
+    <string name="palabra" translatable="false">PALABRA</string>
+    <string name="versiculo" translatable="false">VERSÍCULO</string>
+    <string name="compartirTooltip">Compartir la promesa</string>
+    <string name="descargarTooltip">Descargar imagen</string>
+    <string name="copiarTooltip">Copiar la promesa al portapapeles</string>
+    <string name="promesaImagenPath">Promesa_</string>
+    <string name="extensionImagenPath" translatable="false">.jpg</string>
+
+    <string-array name="versionesES" translatable="false">
+        <item>RVR60</item>
+        <item>NVI</item>
+        <item>TLA</item>
+        <item>NTV</item>
+    </string-array>
+
+    <string-array name="versionesEN" translatable="false">
+        <item>KJV</item>
+    </string-array>
+
+    <string-array name="fondos" translatable="false">
+        <item>@drawable/fondo1</item>
+        <item>@drawable/fondo2</item>
+        <item>@drawable/fondo3</item>
+        <item>@drawable/fondo4</item>
+        <item>@drawable/fondo5</item>
+        <item>@drawable/fondo6</item>
+        <item>@drawable/fondo7</item>
+        <item>@drawable/fondo8</item>
+        <item>@drawable/fondo9</item>
+        <item>@drawable/fondo10</item>
+        <item>@drawable/fondo11</item>
+        <item>@drawable/fondo12</item>
+        <item>@drawable/fondo13</item>
+        <item>@drawable/fondo14</item>
+        <item>@drawable/fondo15</item>
+        <item>@drawable/fondo16</item>
+        <item>@drawable/fondo17</item>
+        <item>@drawable/fondo18</item>
+        <item>@drawable/fondo19</item>
+        <item>@drawable/fondo20</item>
+        <item>@drawable/fondo21</item>
+        <item>@drawable/fondo22</item>
+        <item>@drawable/fondo23</item>
+    </string-array>
+
+    <string-array name="imagenesCompartir" translatable="false">
+        <item>@drawable/compartirimagen1</item>
+        <item>@drawable/compartirimagen2</item>
+        <item>@drawable/compartirimagen3</item>
+        <item>@drawable/compartirimagen4</item>
+        <item>@drawable/compartirimagen5</item>
+        <item>@drawable/compartirimagen6</item>
+        <item>@drawable/compartirimagen7</item>
+        <item>@drawable/compartirimagen8</item>
+        <item>@drawable/compartirimagen9</item>
+        <item>@drawable/compartirimagen10</item>
+        <item>@drawable/compartirimagen11</item>
+        <item>@drawable/compartirimagen12</item>
+        <item>@drawable/compartirimagen13</item>
+        <item>@drawable/compartirimagen14</item>
+        <item>@drawable/compartirimagen15</item>
+        <item>@drawable/compartirimagen16</item>
+        <item>@drawable/compartirimagen17</item>
+        <item>@drawable/compartirimagen18</item>
+        <item>@drawable/compartirimagen19</item>
+        <item>@drawable/compartirimagen20</item>
+        <item>@drawable/compartirimagen21</item>
+    </string-array>
+
+</resources>
