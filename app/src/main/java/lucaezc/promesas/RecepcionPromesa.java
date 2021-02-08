@@ -25,6 +25,7 @@ import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.content.FileProvider;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Layout;
@@ -35,7 +36,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.text.SimpleDateFormat;
@@ -177,6 +177,8 @@ public class RecepcionPromesa extends AppCompatActivity {
 
                 Toast.makeText(getApplicationContext(), R.string.guardadoImagen, Toast.LENGTH_LONG).show();
 
+                final Uri contentUri = FileProvider.getUriForFile(getApplicationContext(), "${applicationId}.provider", imageFile);
+
                 // Abre el diálogo de alerta para preguntar si se desea boton_compartir la promesa
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
                 alertDialogBuilder.setTitle("");
@@ -187,7 +189,7 @@ public class RecepcionPromesa extends AppCompatActivity {
                             public void onClick(DialogInterface dialog,int id) { // Si es "SI" comparte la imagen
                                 Intent compartirIntent = new Intent(android.content.Intent.ACTION_SEND);
                                 compartirIntent.setType("image*//*");
-                                compartirIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse("file://" + mPath));
+                                compartirIntent.putExtra(Intent.EXTRA_STREAM, contentUri);
                                 startActivity(Intent.createChooser(compartirIntent, getResources().getString(R.string.tituloCompartir)));
                             }
                         })

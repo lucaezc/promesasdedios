@@ -24,11 +24,10 @@ public class DbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        switch (oldVersion) {
-            case 1:
-                scriptsDropVersion1(db);
-                scriptsVersion1(db);
-                scriptsVersion2(db);
+        if (oldVersion == 1) {
+            scriptsDropVersion1(db);
+            scriptsVersion1(db);
+            scriptsVersion2(db);
         }
     }
 
@@ -149,7 +148,7 @@ public class DbHelper extends SQLiteOpenHelper {
         Integer c = fila.getCount();
         while (c.equals(0)){
             Random r = new Random();
-            Integer otroNroPromesa = r.nextInt(cantPromesas) + 1; // random.nextInt(max - min + 1) + min
+            Integer otroNroPromesa = r.nextInt(cantPromesas) + 1;
 
             if (tema.equals(0)){
                 fila = queryPromesa(otroNroPromesa, versionBiblia);

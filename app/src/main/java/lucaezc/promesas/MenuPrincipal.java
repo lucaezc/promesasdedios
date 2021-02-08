@@ -17,7 +17,6 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Spinner;
-
 import java.util.Locale;
 import java.util.Random;
 
@@ -143,8 +142,7 @@ public class MenuPrincipal extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void fondoAleatorio(){
-        // Obtiene un fondo aleatorio de un array de los resources para fondos
+    public void fondoAleatorio(){ // Obtiene un fondo aleatorio de un array de los resources para fondos
         ConstraintLayout layout = (ConstraintLayout) findViewById(R.id.activity_menu_principal);
         TypedArray imgs = getResources().obtainTypedArray(R.array.fondos);
         Random r = new Random();
